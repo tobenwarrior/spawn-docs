@@ -1,0 +1,2 @@
+# GitBook requires its navigation manifest at repository root.
+root_allow_extra = ["SUMMARY.md", "gitbook-docs.yaml"]
