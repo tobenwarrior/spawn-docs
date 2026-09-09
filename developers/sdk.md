@@ -40,3 +40,7 @@ The service stores player-controlled data. It does not validate your game's sche
 ## Not yet provided
 
 There is no SDK method for spending tokens, awarding withdrawable rewards, deploying a build or running a multiplayer server. Rob the Rich's shipped practice build is not yet connected to this save client. The [API reference](api.md) documents all currently available platform routes.
+
+## Proposed next integration
+
+The planned SDK separates browser, agent-publishing and game-server clients. Private project keys never belong in the browser. See [project credentials and game transactions](transactions.md) for the proposed permission model and creator-controlled pool transfer contract; none of those methods is released yet.

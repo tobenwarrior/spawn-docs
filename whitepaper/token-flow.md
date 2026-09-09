@@ -18,7 +18,7 @@ An approved withdrawal would reverse that process: reserve part of your account 
 
 The intended shared balance could pay for approved game purchases or other supported actions. Every purchase needs a clear price and an explanation of what the player receives. A purchase would reduce the player's available balance and be recorded by the platform.
 
-Whether the payment goes to the creator, a treasury, a reward pool or a defined fee depends on the eventual rules. Those splits have not been chosen. Spending does not necessarily burn tokens, and an in-game item is not necessarily tradeable or an NFT.
+The selected direction routes approved game payments into that game's creator-controlled pool. The creator can distribute rewards or withdraw available funds. Any platform fee and its split remain unfinalized and must be disclosed before charging. A completed payment is not a guarantee of a future reward. Spending does not necessarily burn tokens, and an in-game item is not necessarily tradeable or an NFT.
 
 ## Supply and tokenomics
 

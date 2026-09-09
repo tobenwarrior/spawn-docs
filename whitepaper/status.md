@@ -18,6 +18,8 @@ Spawn is in local development. The table describes the current repository, not a
 | GitHub connection and builds | Not configured / planned | No repository access, build worker or live deployment |
 | Managed saves and SDK | Local foundation | Versioned JSON storage; separate public-source SDK repository; reviewed first-party game only; shipped game integration still pending |
 | Transparency dashboard and API | Implemented locally | Explicitly unconfigured financial data; no reserve proof |
+| Project keys and agent submissions | Designed, not implemented | Publishing credentials are separate from game runtime and financial authority |
+| Creator-controlled game pools and transfers | Designed, not implemented | Player-approved payments, discretionary creator rewards and owner withdrawals; no real payments |
 | Token, custody contracts and financial ledger | Planned | No issued platform token or deposit/withdrawal system |
 | Multiplayer hosting | Creator-operated direction | Spawn does not provide real-time servers |
 | Whitepaper | Implemented locally | Main whitepaper plus separate Developer Docs; versioned Markdown and GitBook-compatible contents |

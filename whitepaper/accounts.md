@@ -39,4 +39,4 @@ The current implementation supports one linked externally owned address per acco
 
 ## Balances and earnings
 
-The current PLAY balance is a simulation, not an issued token or a future allocation. The intended real token flow is explained in [Using the token](token-flow.md), and earning through funded campaigns is described in [The reward pool](rewards.md).
+The current PLAY balance is a simulation, not an issued token or a future allocation. The intended real token flow is explained in [Using the token](token-flow.md), and creator-controlled game rewards is described in [The reward pool](rewards.md).

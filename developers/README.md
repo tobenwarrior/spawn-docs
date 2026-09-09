@@ -12,7 +12,8 @@ The local foundation currently includes private project records and a small vers
 2. Read [project architecture](architecture.md) for a structure that works with people and coding agents.
 3. Read [the SDK and storage guide](sdk.md) for the current integration and its boundaries.
 4. Read [publishing and hosting](publishing.md) to understand what can be saved today and what still needs infrastructure.
-5. Use the [API reference](api.md) for exact routes, limits and errors.
+5. Read [project credentials and game transactions](transactions.md) for the proposed agent, payment and pool-transfer boundaries. These financial interfaces are not released.
+6. Use the [API reference](api.md) for exact routes, limits and errors.
 
 The creator workspace (local prototype) records your game name, description, repository reference and storage preference. A signed-in account is required; local Google OAuth configuration is still pending.
 

@@ -21,3 +21,4 @@
   * [SDK and managed storage](developers/sdk.md)
   * [Publishing and hosting](developers/publishing.md)
   * [API reference](developers/api.md)
+  * [Project credentials and game transactions](developers/transactions.md)

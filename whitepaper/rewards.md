@@ -1,43 +1,39 @@
-# The reward pool
+# Game reward pools
 
-## A funded source of player rewards
+## A treasury controlled by each creator
 
-Spawn's proposed reward pool is a dedicated budget of tokens that can be distributed through approved game activities. Its purpose is to make the source of a reward clear: a player receives tokens from an identified pool, rather than a game creating an unsupported account balance.
+Every game is intended to have its own creator-controlled token pool. The creator can add tokens, receive player payments, distribute rewards to Spawn accounts or withdraw the pool's available balance. One game's pool is separate from every other game and from player account balances.
 
-The pool is a design proposal. No reward pool is funded or operating in the prototype. Pool size, contributions, distribution formulas and eligibility are **not finalized**.
+This is the selected product direction, not a live financial service. No pool is funded or operating in the prototype. Token supply, fees, allocations and reward formulas remain **not finalized**.
 
-## Where the tokens could come from
+## Funding a pool
 
-Possible funding sources include a defined ecosystem allocation, creator contributions or an agreed share of future platform revenue. These are options, not selected tokenomics. No contribution percentage, issuance schedule or fee split has been approved.
+A creator can top up the pool to encourage participation. When a player approves a purchase or entry payment, that payment transfers tokens from the player's available Spawn balance to the game's pool under the disclosed terms. For a simple ten-token example with no fee, the player's balance decreases by ten and the pool increases by ten in one transaction. Ten tokens is an illustration, not a fixed platform entry price.
 
-The eventual design should identify the owner of each pool, its funding transactions, any restrictions on the funds and who can change the distribution rules. A platform-wide pool and a creator-funded game campaign may need separate budgets so the cost of one game cannot silently consume another's funds.
+Under this model, a completed payment becomes creator-controlled funds. It is not held in a protected match prize account. Players must be told what they are buying, whether a refund is available, and that the payment does not guarantee a reward. Any future platform fee must be separately disclosed and recorded; no fee is selected here.
 
-## From pool to player
+## How rewards work
 
-The proposed reward process has five parts:
+The creator decides the game's reward rules and when to distribute tokens from its available pool. A game server may ask Spawn to credit a player after a kill, win or other event. Spawn verifies the calling credential, the game pool, the recipient and the available funds, then records the transfer exactly once.
 
-1. **Fund a budget.** Tokens are committed to an identified reward campaign before claims become available.
-2. **Publish the rules.** Players can see the qualifying activity, reward calculation, campaign dates, eligibility and remaining limits.
-3. **Verify the activity.** An approved service checks the result and whether the player has already claimed it. A number supplied by the browser is not enough.
-4. **Record the reward.** An authorized transfer reduces the available campaign budget and increases the player's account balance, with a record linking both changes.
-5. **Allow supported use.** Once available under the published rules, the reward can be used in supported games or requested for withdrawal.
+Spawn does not certify that the reported gameplay result is honest. A developer can favor recipients or invent results while distributing its own available funds. This discretion must not be presented as a platform guarantee of fair outcomes.
 
-This flow does not create additional underlying tokens. It allocates funded tokens to a player. If future token issuance funds a pool, that issuance must be governed and reported separately.
+A successful reward reduces the game pool and increases the player's Spawn balance atomically. Once credited, the reward belongs to the player: the creator cannot withdraw it, reverse it at will or use it to fund another award. A displayed score, projected earning or unconfirmed SDK request is not a credited token balance.
 
-## Limits and exhausted budgets
+## What the creator can withdraw
 
-A shared economy needs limits at the campaign, game and player level. A compromised game must not be able to award an unlimited amount or spend another game's budget. The exact limits and validation process are still to be designed.
+The creator can request withdrawal of all available, uncommitted funds in its game pool. Tokens already credited to players, reserved for an accepted withdrawal or committed by an explicit refund/transfer obligation are unavailable for another withdrawal. Pending operations cannot double-spend the same funds.
 
-When a budget is exhausted, further rewards cannot simply become unfunded balances. The campaign should stop issuing rewards, or receive additional funds through a disclosed process. Players should see the applicable limits before participating.
+No match-level reserve is required by this selected model. A future campaign that promises a protected prize would need a separate locked arrangement and different disclosures; it cannot simultaneously promise guaranteed prizes and unrestricted creator withdrawal.
 
-## What players should expect
+## What players should see
 
-An earning feature should explain whether the result is a withdrawable token, a game-only point or another reward; how much can be earned; when it becomes available; and how failed or disputed claims are handled. A score or achievement alone is not a financial entitlement.
+Each paid game should clearly state: **Creator-controlled pool. The creator can distribute or withdraw available tokens. Pool size does not guarantee a payout.** Spawn's payment confirmation must show the price, game, payment purpose and applicable refund/reward terms before the player approves.
 
-No earnings rate, daily income, staking yield, guaranteed prize or airdrop allocation is announced. Rob the Rich's current practice build does not award redeemable tokens, and playing the prototype does not establish a right to a future distribution.
+The public pool page should show the available balance, creator top-ups, player-payment totals, credited rewards and creator withdrawals, with a timestamp. A large balance is a snapshot, not a guaranteed future budget or proof that the game is trustworthy. Reports, moderation and suspension remain possible; creator control does not excuse deceptive listings or false claims about Spawn protections.
 
-## Reporting the pool
+## Accounting and current availability
 
-The intended public reporting should show funding, approved distributions, remaining budget and the rules attached to each campaign. Ownership of unallocated pool funds determines how they appear in reserve reporting. Once a reward is credited as a redeemable player balance, it must be included in platform liabilities.
+A transfer from a player into a pool changes who is entitled to the tokens; it does not create new underlying tokens. A transfer from a pool to a player changes that entitlement again. Both player balances and creator pool obligations must be covered by the platform's reserve accounting, including pending withdrawals without double-counting.
 
-The same tokens must not be counted as both an available reward budget and an already distributed reward. These accounting rules and the final reporting format must be implemented and independently checked before earning begins.
+No guaranteed earnings, yield, prize or airdrop allocation is announced. Rob the Rich is currently a practice build with no entry charge or redeemable rewards. Its use as an example does not mean the financial integration exists.

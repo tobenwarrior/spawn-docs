@@ -30,3 +30,7 @@ A managed database does not provide matchmaking, simulation or real-time multipl
 The platform needs game-origin isolation, scoped service credentials, content and dependency review, quotas, reporting and release suspension. Uploading an SDK or passing a build does not guarantee that a game cannot misbehave.
 
 The economic integration is also future work. A developer must never write directly to platform token balances; any later purchase or reward interface needs its own authorization and accounting rules.
+
+## Agent-assisted submission
+
+The intended creator flow issues an expiring key scoped to one project so a local coding agent can submit a build and read its status. It does not grant an automatic front-page listing or financial privileges. The key stays in a local secret environment, outside chat transcripts, repositories and shipped bundles. Runtime credentials are separate. See the [credential and transaction design](transactions.md). Project key issuance and agent submission remain unimplemented.

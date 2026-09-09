@@ -49,3 +49,7 @@ Creator profiles are intended to show their published games. Private drafts and 
 Listing a game does not grant permission to issue rewards. A game that participates in the proposed economy needs separately approved transaction behavior and a funded reward budget. Players must be able to understand the price or earning conditions before acting.
 
 The [reward pool](rewards.md) chapter explains the proposed funding model. The [Developer Docs](../developers/README.md) describe the current code and API boundaries.
+
+## Publishing with an AI assistant
+
+The intended developer experience also supports an agent reading the public SDK instructions and submitting a project build using a limited publishing credential. Creators should not paste live credentials into chat or include them in browser code. Build submission, publication approval and financial integration are distinct permissions. A credential never entitles a game to an immediate front-page listing or access to player funds. This workflow remains planned.
